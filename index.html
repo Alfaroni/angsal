@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>ANGSAL</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <link rel="icon" href="">
+
+    <!-- css.googlefont -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="assets/sass/libs/tailwind.min.css">
+    <link rel="stylesheet" href="assets/sass/main.min.css">
+
+</head>
+
+<body class="font-poppins text-sm md:text-base text-zinc-500">
+    <div class="loader fixed inset-0 flex items-center justify-center bg-primary-1 pointer-events-none z-30"><img src="assets/images/logo.png" class="w-32 md:w-44 object-contain brightness-0 invert" alt="logo" width="240" height="48"></div>
+
+    <!-- header -->
+    <header class="header font-fira text-black fixed top-0 inset-x-0 z-20">
+        <div class="header-container container max-w-full px-6 flex flex-row-reverse justify-between transition-all h-24 lg:px-12">
+            <div class="header-container-logo flex items-center h-full opacity-0"><a href="/"><img src="assets/images/logo.png" class="w-32 md:w-44 object-contain" alt="logo" width="240" height="48" ></a></div>
+            <div class="header-container-nav flex items-center h-full">
+                <button class="header-container-nav-trigger relative flex items-center gap-2 z-20 -mx-4 px-4 h-full lg:hidden" type="button" data-toggle="menu">
+                    <svg width="29" height="29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="6" width="29" height="2" fill="currentColor"/>
+                        <rect y="12" width="29" height="2" fill="currentColor"/>
+                        <rect y="18" width="29" height="2" fill="currentColor"/>
+                    </svg>
+                </button>
+                <div class="header-container-nav-collapse fixed z-10 inset-0 bg-primary-1 transition-transform -translate-x-full overflow-y-auto lg:static lg:bg-transparent lg:translate-x-0 lg:overflow-y-visible"  data-toggle-open="menu">
+                    <ul class="header-container-nav-collapse-menu flex flex-col justify-center whitespace-nowrap min-h-full py-20 text-xl uppercase text-center gap-6 lg:py-0 lg:text-lg lg:flex-row"> 
+                        <li class="header-container-nav-collapse-menu-item active"><a href="javascript:void(0)" data-section-menu="home">Home</a></li>
+                        <li class="header-container-nav-collapse-menu-item"><a href="javascript:void(0)" data-section-menu="about">About</a></li>
+                        <li class="header-container-nav-collapse-menu-item"><a href="javascript:void(0)" data-section-menu="portfolio">Portfolio</a></li>
+                        <li class="header-container-nav-collapse-menu-item"><a href="javascript:void(0)" data-section-menu="team">Team</a></li>
+                        <li class="header-container-nav-collapse-menu-item"><a href="javascript:void(0)" data-section-menu="contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main class="main scroll-smooth overflow-y-auto h-full md:snap-y md:snap-mandatory" data-scroller>
+
+        <!--section.home-->
+        <section class="section relative min-h-full bg-black text-white snap-start snap-always flex flex-col justify-between" data-section="home" >
+            <div class="section-videocover absolute inset-0 pointer-events-none">
+                <video class="object-cover w-full h-full"  preload="none" loop playsinline muted autoplay>
+                    <source src="assets/images/video.mp4" type="video/mp4">
+                </video>
+                <span class="absolute inset-0 bg-white/20 backdrop-blur"></span>
+            </div>
+            <div class="section-container container relative z-10 max-w-screen-xl mx-auto flex-1 pt-28 pb-12 px-6 text-center flex flex-col justify-center items-center gap-8 lg:gap-12 lg:px-12">
+                <div class="section-container-logo"><a href="/"><img src="assets/images/logo.png" class="w-40 object-contain lg:w-80" alt="logo" width="320" height="96" ></a></div>
+                <h1 class="section-container-tagline uppercase font-extrabold font-poppins max-w-xs md:max-w-4xl leading-none text-5xl md:text-[6rem] lg:text-[8rem]">
+                    <small class="text-primary-1 block text-base font-normal normal-case text-left ml-12 md:ml-24 lg:ml-36">
+                        <span class="animejs animejs--ml3">Welcome.</span><br>
+                        <span class="animejs animejs--ml3">Digital is our home.</span>
+                    </small>
+                    <span class="text-primary-1 animejs animejs--ml3">Creative</span> <br>
+                    <span class="text-primary-1 animejs animejs--ml3">Department</span>
+                    <small class="font-bold block mt-2 text-xl lg:text-5xl">
+                        <span class="animejs animejs--ml3">We made the creativity</span> <br>
+                        <span class="animejs animejs--ml3">beyond the creation itself.</span>
+                    </small>
+                </h1>
+                <span class="bg-primary-1 w-16 h-4"></span>
+                <p class="section-container-text">
+                    <span class="animejs animejs--ml3">Shoot us your serious questions. its that rare time when we’re in a good mood</span><br class="hidden lg:block">
+                    <span class="animejs animejs--ml3">to chat about digital creative agency incessantly without sending people over the edge</span></p>
+            </div>
+        </section>
+
+        <!--section.about.slide1-->
+        <section class="section relative min-h-full bg-primary-1 snap-start snap-always flex flex-col justify-between text-white" data-section="about">
+            <div class="section-container relative z-10 flex-1 container max-w-screen-xl mx-auto pt-28 pb-12 px-6 flex flex-col justify-center gap-8 lg:gap-12 lg:px-12">
+                <span class="flex items-center gap-2 lg:hidden uppercase">About Us <span class="block w-8 border-t border-current"></span></span>
+                <h2 class="section-container-tagline uppercase font-extrabold font-poppins leading-none text-4xl md:text-6xl  animate animate--fadeInUp">
+                    <span class="block">Why Not<br> 
+                    Shoot a Video?<br>
+                    Seriously?</span>
+                    <small class="font-normal text-lg block mt-2 lg:text-2xl">We cater to all your needs because your brand's essence lies in every detail you conceive. ever ponder if your competitor is contemplating the same?"</small>
+                    <small class="font-normal block italic normal-case mt-4 text-base">(Grab a seat, and les dive into discusssion!)</small>
+                </h2>
+            </div>
+            <div class="section-footer relative z-10 bg-white text-primary-1 flex items-center min-h-20">
+                <div class="section-footer-nav container flex items-center gap-1  whitespace-nowrap max-w-screen-xl mx-auto overflow-x-auto snap-x snap-mandatory scroll-smooth px-6 lg:px-12">
+                    <div class="section-footer-nav-item">Film Documentary</div>|
+                    <div class="section-footer-nav-item">Music Video</div>|
+                    <div class="section-footer-nav-item">Event</div>|
+                    <div class="section-footer-nav-item">Tv Commercial</div>|
+                    <div class="section-footer-nav-item">Company Profile</div>|
+                    <div class="section-footer-nav-item">Animation</div>
+                </div>
+            </div>
+        </section>
+
+        <!--section.about-slide2-->
+        <section class="section relative min-h-full bg-primary-1 snap-start snap-always flex flex-col justify-between text-white" data-section="about">
+            <div class="section-container relative z-10 flex-1 container max-w-screen-xl mx-auto pt-28 pb-12 px-6 flex flex-col justify-center gap-8 lg:gap-12 lg:px-12">
+                <h2 class="section-container-tagline uppercase font-extrabold font-poppins leading-none text-4xl md:text-6xl animate animate--fadeInUp">
+                    <span class="block">Anyone Have The Same<br>
+                    Chance to be a Star!<br> 
+                    or Even Becoming<br> 
+                    a Superstar!</span>
+                    <small class="font-normal block mt-2 text-lg lg:text-2xl">We create a music, song, and lyric however you'd like!</small>
+                    <small class="font-normal block italic normal-case mt-4 text-base">(You only live once)</small>
+                </h2>
+            </div>
+            <div class="section-footer relative z-10 bg-white text-primary-1 flex items-center min-h-20">
+                <div class="section-footer-nav container flex items-center gap-1  whitespace-nowrap max-w-screen-xl mx-auto overflow-x-auto snap-x snap-mandatory scroll-smooth px-6 lg:px-12">
+                    <div class="section-footer-nav-item">Music Arrangements</div>|
+                    <div class="section-footer-nav-item">Music Scoring</div>|
+                    <div class="section-footer-nav-item">Jingle</div>|
+                    <div class="section-footer-nav-item">Voice Over</div>
+                </div>
+            </div>
+        </section>
+
+        <!--section.about-slide3-->
+        <section class="section relative min-h-full bg-primary-1 snap-start snap-always flex flex-col justify-between text-white" data-section="about">
+            <div class="section-container relative z-10 flex-1 container max-w-screen-xl mx-auto pt-28 pb-12 px-6 flex flex-col justify-center gap-8 lg:gap-12 lg:px-12">
+                <h2 class="section-container-tagline uppercase font-extrabold font-poppins leading-none text-4xl md:text-6xl animate animate--fadeInUp">
+                    <span class="block">If You Think <br> 
+                    Logo Designs & Illustration <br>
+                    as Lame Part of Your Bussiness, <br> 
+                    Just Use AI!<br> 
+                    But If You Seek a Design Identity With Heart, </span>
+                    <small class="font-normal inline-block normal-case mt-4 italic text-base">(Grab the chair for a deeper discussion)</small>
+                </h2>
+            </div>
+            <div class="section-footer relative z-10 bg-white text-primary-1 flex items-center min-h-20">
+                <div class="section-footer-nav container flex items-center gap-1  whitespace-nowrap max-w-screen-xl mx-auto overflow-x-auto snap-x snap-mandatory scroll-smooth px-6 lg:px-12">
+                    <div class="section-footer-nav-item">Music Arrangements</div>|
+                    <div class="section-footer-nav-item">Music Scoring</div>|
+                    <div class="section-footer-nav-item">Jingle</div>|
+                    <div class="section-footer-nav-item">Voice Over</div>
+                </div>
+            </div>
+        </section>
+
+        <!--section.about-slide4-->
+        <section class="section relative min-h-full bg-primary-1 snap-start snap-always flex flex-col justify-between text-white" data-section="about">
+            <div class="section-container relative z-10 flex-1 container max-w-screen-xl mx-auto pt-28 pb-12 px-6 flex flex-col justify-center gap-8 lg:gap-12 lg:px-12">
+                <h2 class="section-container-tagline uppercase font-extrabold font-poppins leading-none text-4xl md:text-6xl animate animate--fadeInUp">
+                    <span class="block">You Think Your<br> 
+                    Account <br>
+                    Is Secure Enough?</span> 
+                    <small class="font-normal block mt-2 text-lg lg:text-2xl">
+                        Make a space to interact. Build/Creating websites<br> 
+                        mobile apps, secure and fix the network is our job<br> 
+                        are you sure you don't need it?</small>
+                    <small class="font-normal block italic normal-case mt-4 text-base mt-2">(Lets have a further talk!)</small>
+                </h2>
+            </div>
+            <div class="section-footer relative z-10 bg-white text-primary-1 flex items-center min-h-20">
+                <div class="section-footer-nav container flex items-center gap-1 whitespace-nowrap max-w-screen-xl mx-auto overflow-x-auto snap-x snap-mandatory scroll-smooth px-6 lg:px-12">
+                    <div class="section-footer-nav-item">Website</div>|
+                    <div class="section-footer-nav-item">Mobile Applications</div>|
+                    <div class="section-footer-nav-item">Network & Security</div>|
+                    <div class="section-footer-nav-item">Cloud Management</div>|
+                    <div class="section-footer-nav-item">Social Media</div>|
+                    <div class="section-footer-nav-item">Digital Marketing</div>
+                </div>
+            </div>
+        </section>
+
+        <!--section.portfolio.slide1-->
+        <section class="section relative min-h-full bg-white snap-start snap-always flex flex-col justify-between" data-section="portfolio">
+            <div class="section-container relative z-10 container max-w-screen-xl mx-auto flex-1 pt-28 pb-12 px-6 flex flex-col justify-center gap-8 lg:gap-12 lg:px-12">
+                <span class="flex items-center gap-2 lg:hidden uppercase">Portfolio <span class="block w-8 border-t border-current"></span></span>
+                <h2 class="section-container-tagline text-primary-1 uppercase font-extrabold font-poppins leading-none text-4xl md:text-6xl animate animate--fadeInUp">
+                    <span class="block">Here We Present Some<br> 
+                    Of Our Portfolios<br>
+                    They are not the works<br> 
+                    That are good Enough, <br>
+                    But We want to Show You <br>
+                    That We Do Not Only Do It</br>
+                    For Promotion</span> 
+                </h2>
+            </div>
+        </section>
+
+        <!--section.portfolio.slide2-->
+        <section class="section relative min-h-full bg-white snap-start snap-always flex flex-col justify-between" data-section="portfolio">
+            <div class="section-container relative z-10 container max-w-screen-xl mx-auto flex-1 pt-28 pb-12 px-6 flex flex-col justify-center gap-8 lg:gap-12 lg:px-12">
+                <div class="portfolio flex flex-wrap items-start -m-1">
+                    <div class="portfolio-item relative w-full md:w-2/6 h-44 p-1"><a href="assets/images/portfolio/1.jpg" data-fancybox="portfolio" class="block w-full h-full overflow-hidden"><img class="w-full h-full object-cover transition hover:scale-105" src="assets/images/portfolio/1.jpg" width="200" height="100"></a></div>
+                    <div class="portfolio-item relative w-1/2 md:w-1/6 h-44 p-1"><a href="assets/images/portfolio/2.jpg" data-fancybox="portfolio" class="block w-full h-full overflow-hidden"><img class="w-full h-full object-cover transition hover:scale-105"  src="assets/images/portfolio/2.jpg" width="200" height="100"></a></div>
+                    <div class="portfolio-item relative w-1/2 md:w-2/6 h-44 p-1"><a href="assets/images/portfolio/3.jpg" data-fancybox="portfolio" class="block w-full h-full overflow-hidden"><img class="w-full h-full object-cover transition hover:scale-105"  src="assets/images/portfolio/3.jpg" width="200" height="100"></a></div>
+                    <div class="portfolio-item relative w-1/2 md:w-1/6 h-44 p-1"><a href="assets/images/portfolio/4.jpg" data-fancybox="portfolio" class="block w-full h-full overflow-hidden"><img class="w-full h-full object-cover transition hover:scale-105"  src="assets/images/portfolio/4.jpg" width="200" height="100"></a></div>
+                    <div class="portfolio-item relative w-1/2 md:w-1/6 h-44 p-1"><a href="assets/images/portfolio/5.jpg" data-fancybox="portfolio" class="block w-full h-full overflow-hidden"><img class="w-full h-full object-cover transition hover:scale-105"  src="assets/images/portfolio/5.jpg" width="200" height="100"></a></div>
+                    <div class="portfolio-item relative w-full md:w-2/6 h-44 p-1"><a href="assets/images/portfolio/6.jpg" data-fancybox="portfolio" class="block w-full h-full overflow-hidden"><img class="w-full h-full object-cover transition hover:scale-105"  src="assets/images/portfolio/6.jpg" width="200" height="100"></a></div>
+                    <div class="portfolio-item relative w-1/2 md:w-3/6 h-44 p-1"><a href="assets/images/portfolio/7.jpg" data-fancybox="portfolio" class="block w-full h-full overflow-hidden"><img class="w-full h-full object-cover transition hover:scale-105"  src="assets/images/portfolio/7.jpg" width="200" height="100"></a></div>
+                    <div class="portfolio-item relative w-1/2 md:w-1/6 h-44 p-1"><a href="assets/images/portfolio/8.jpg" data-fancybox="portfolio" class="block w-full h-full overflow-hidden"><img class="w-full h-full object-cover transition hover:scale-105"  src="assets/images/portfolio/8.jpg" width="200" height="100"></a></div>
+                    <div class="portfolio-item relative w-full md:w-2/6 h-44 p-1"><a href="assets/images/portfolio/9.jpg" data-fancybox="portfolio" class="block w-full h-full overflow-hidden"><img class="w-full h-full object-cover transition hover:scale-105"  src="assets/images/portfolio/9.jpg" width="200" height="100"></a></div>
+                    <div class="portfolio-item relative w-1/2 md:w-2/6 h-44 p-1"><a href="assets/images/portfolio/10.jpg" data-fancybox="portfolio" class="block w-full h-full overflow-hidden"><img class="w-full h-full object-cover transition hover:scale-105"  src="assets/images/portfolio/10.jpg" width="200" height="100"></a></div>
+                    <div class="portfolio-item relative w-1/2 md:w-1/6 h-44 p-1"><a href="assets/images/portfolio/11.jpg" data-fancybox="portfolio" class="block w-full h-full overflow-hidden"><img class="w-full h-full object-cover transition hover:scale-105"  src="assets/images/portfolio/11.jpg" width="200" height="100"></a></div>
+               </div>
+            </div>
+        </section>
+
+        <!--section.team-->
+        <section class="section relative min-h-full bg-white snap-start snap-always flex flex-col justify-between" data-section="team">
+            <div class="section-container relative z-10 container max-w-screen-xl mx-auto flex-1 py-28 px-6 flex flex-col justify-center gap-8 lg:gap-12 lg:px-12">
+                <span class="flex items-center gap-2 lg:hidden uppercase">Our Team <span class="block w-8 border-t border-current"></span></span>
+                <div class="team flex flex-wrap text-center justify-center items-center gap-6 -mx-6 px-6">
+                    <div class="team-item shrink-0 relative">
+                        <img class="w-32 h-32 md:w-52 md:h-52 bg-zinc-500 rounded-full object-cover" src="assets/images/team/jake-nackos.jpg" width="100" height="100">
+                        <p class="font-bold text-black text-lg md:text-xl mt-4">Jake Nackos <small class="block text-sm text-zinc-500 font-normal">Art Director</small></p>
+                    </div>
+                    <div class="team-item shrink-0 relative">
+                        <img class="w-32 h-32 md:w-52 md:h-52 bg-zinc-500 rounded-full object-cover" src="assets/images/team/lucas-gouvea.jpg" width="100" height="100">
+                        <p class="font-bold text-black text-lg md:text-xl mt-4">Lucas Gouvea <small class="block text-sm text-zinc-500 font-normal">UI/UX Designer</small></p>
+                    </div>
+                    <div class="team-item shrink-0 relative">
+                        <img class="w-32 h-32 md:w-52 md:h-52 bg-zinc-500 rounded-full object-cover" src="assets/images/team/pavel-anoshin.jpg" width="100" height="100">
+                        <p class="font-bold text-black text-lg md:text-xl mt-4">Pavel Anoshin <small class="block text-sm text-zinc-500 font-normal">Engineer</small></p>
+                    </div>
+                    <div class="team-item shrink-0 relative">
+                        <img class="w-32 h-32 md:w-52 md:h-52 bg-zinc-500 rounded-full object-cover" src="assets/images/team/philip-martin.jpg" width="100" height="100">
+                        <p class="font-bold text-black text-lg md:text-xl mt-4">Philip Martin <small class="block text-sm text-zinc-500 font-normal">Engineer</small></p>
+                    </div>
+                    <div class="team-item shrink-0 relative">
+                        <img class="w-32 h-32 md:w-52 md:h-52 bg-zinc-500 rounded-full object-cover" src="assets/images/team/tyler-nix.jpg" width="100" height="100">
+                        <p class="font-bold text-black text-lg md:text-xl mt-4">Tyler Nix <small class="block text-sm text-zinc-500 font-normal">Editorial</small></p>
+                    </div>
+               </div>
+            </div>
+        </section>
+
+        <!--section.contact-->
+        <section class="section relative min-h-full bg-white snap-start snap-always flex flex-col justify-between" data-section="contact">
+            <div class="section-container relative z-10 container max-w-screen-xl mx-auto flex-1 pt-28 pb-12 px-6 flex flex-col justify-end gap-8 lg:gap-12 lg:px-12">
+                <span class="flex items-center gap-2 lg:hidden uppercase">Contact Us <span class="block w-8 border-t border-current"></span></span>
+                <div class="contact flex flex-col  gap-6 justify-between lg:flex-row">
+                    <div class="contact-item"><p class="text-black font-bold text-2xl">Our Phone: <a class="block font-normal text-lg text-zinc-500" rel="nofollow" href=”https://api.whatsapp.com/send/?phone=081242424249&text&type=phone_number&app_absent=0”>+62 81242424249</a></p></div>
+                    <div class="contact-item"><p class="text-black font-bold text-2xl">Our Email: <a class="block font-normal text-lg text-zinc-500" rel="nofollow" href="mailto:contact@angsal.com">contact@angsal.com</a></p></div>
+                    <div class="contact-item"><p class="text-black font-bold text-2xl">Find us: <a class="block font-normal text-lg text-zinc-500"  rel="nofollow" href="#">Gondangdia, Menteng, Central Jakarta City, Jakarta</a></p></div>
+                </div>
+            </div>                
+            <div class="section-maps p-6 lg:p-12"><iframe class="aspect-video w-full max-h-96" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3966.5158823386923!2d106.81721617604425!3d-6.195457060698094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1710640649409!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+        </section>
+    </main>
+
+
+    <!--js-->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="assets/js/main.js" defer></script>
+</body>
+</html>
