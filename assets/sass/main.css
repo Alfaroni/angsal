@@ -1,0 +1,126 @@
+:root {
+  --font-poppins: 'Poppins', sans-serif;
+  --font-fira: 'Fira Sans', sans-serif;
+  --color-primary-1: #DA002A;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+*,
+*::after,
+*::before {
+  border-color: transparent;
+}
+
+html, body {
+  overflow: hidden;
+  height: 100%;
+}
+
+.snap-y, .snap-x {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.snap-y::-webkit-scrollbar, .snap-x::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes loader {
+  100% {
+    opacity: 0;
+    display: none;
+    pointer-events: none;
+  }
+}
+
+.loader {
+  animation: loader 300ms both 600ms;
+}
+
+.animejs .letter {
+  opacity: 0;
+}
+
+[data-theme]:not([data-theme="home"]) .header-container-logo {
+  opacity: 1;
+}
+
+[data-theme]:is([data-theme="about"]) .header-container-nav-trigger {
+  color: white;
+}
+
+[data-theme]:is([data-theme="about"]) .header-container-logo {
+  filter: brightness(0) invert(1);
+}
+
+.header-container-nav-trigger svg rect {
+  transition: 300ms ease;
+}
+
+.header-container-nav-trigger.is-active {
+  color: white;
+}
+
+.header-container-nav-trigger.is-active::after {
+  content: "CLOSE";
+}
+
+.header-container-nav-trigger.is-active svg rect:nth-child(1) {
+  transform: rotate(45deg) translateX(7px) translateY(-7px);
+}
+
+.header-container-nav-trigger.is-active svg rect:nth-child(2) {
+  opacity: 0;
+}
+
+.header-container-nav-trigger.is-active svg rect:nth-child(3) {
+  transform: rotate(-45deg) translateX(-15px) translateY(2px);
+}
+
+.header-container-nav-collapse.open {
+  transform: translateX(0);
+}
+
+.header-container-nav-collapse-menu-item.is-active, .header-container-nav-collapse-menu-item:hover {
+  color: white;
+}
+
+@media (min-width: 1024px) {
+  [data-theme]:not([data-theme="about"]) .header-container-nav-collapse-menu-item.is-active, [data-theme]:not([data-theme="about"]) .header-container-nav-collapse-menu-item:hover {
+    color: var(--color-primary-1);
+  }
+  .animate {
+    --delay: 50ms;
+    -webkit-transition: opacity 800ms var(--delay), -webkit-transform 800ms cubic-bezier(0.13, 0.07, 0.26, 0.99) var(--delay);
+    transition: opacity 800ms var(--delay), transform 800ms cubic-bezier(0.13, 0.07, 0.26, 0.99) var(--delay);
+    opacity: 0;
+  }
+  .animate--fadeIn {
+    -webkit-transform: scale(1, 0.1);
+    transform: scale(1, 1);
+  }
+  .animate--fadeInUp {
+    -webkit-transform: translate3d(0, 1rem, 0);
+    transform: translate3d(0, 1rem, 0);
+  }
+  .animate--fadeInLeft {
+    -webkit-transform: translate3d(-1rem, 0, 0);
+    transform: translate3d(-1rem, 0, 0);
+  }
+  .animate--fadeInRight {
+    -webkit-transform: translate3d(1rem, 0, 0);
+    transform: translate3d(1rem, 0, 0);
+  }
+  .animate--fadeInDown {
+    -webkit-transform: translate3d(0, -1rem, 0);
+    transform: translate3d(0, -1rem, 0);
+  }
+  .is-visible .animate {
+    -webkit-transform: scale(1, 1) translate3d(0, 0, 0);
+    transform: scale(1, 1) translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
